@@ -15,7 +15,7 @@ webgraph-v2.1 ,I have finished the compress programe , but decompress and random
 
 MessageWind(MessageStorm) is a chat software like QQ, and the development tool is Qt4.8.
 
-filetransfer is a softwore which transmit files between Linux OS by Linux socket.
+filetransfer is a softwore which transmit files between Linux OS by socket interface.
 
 Author: Nick Tsai 
 Email: nicktsai@163.com
