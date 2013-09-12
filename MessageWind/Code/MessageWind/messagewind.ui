@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageWind</class>
+ <widget class="QMainWindow" name="MessageWind">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MessageWind</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="settingButton">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>60</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icon/icons/wrench.png</normaloff>:/icon/icons/wrench.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="numberLabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>号码：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="receiveBoxButton">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icon/icons/email.png</normaloff>:/icon/icons/email.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="writeButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icon/icons/email_edit.png</normaloff>:/icon/icons/email_edit.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sendBoxButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icon/icons/email_go.png</normaloff>:/icon/icons/email_go.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="draftBoxButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>60</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="resource.qrc">
+      <normaloff>:/icon/icons/email_open_image.png</normaloff>:/icon/icons/email_open_image.png</iconset>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="contactsTreeWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>251</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">1</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="totalUnreadSmsLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>505</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>未读消息：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="totalRubishSmsLabel">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>500</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>未读垃圾消息：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>18</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>姓名：</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>42</y>
+      <width>251</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <action name="action_Add">
+   <property name="text">
+    <string>增加</string>
+   </property>
+  </action>
+  <action name="action_Edit">
+   <property name="text">
+    <string>编辑</string>
+   </property>
+  </action>
+  <action name="action_Move_to_dark">
+   <property name="text">
+    <string>移动到黑名单</string>
+   </property>
+  </action>
+  <action name="action_Move_to_white">
+   <property name="text">
+    <string>移动到白名单</string>
+   </property>
+  </action>
+  <action name="action_Delete">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="action_Send_Message">
+   <property name="text">
+    <string>发送消息</string>
+   </property>
+  </action>
+  <action name="action_Find">
+   <property name="text">
+    <string>查找</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

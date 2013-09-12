@@ -1,0 +1,5 @@
+create_table.sql是创建数据库的脚本，可以根据需要修改
+srv_record_req.c是以请求修改模式进行记录的文件，不包含在该模块的源文件中,可能以后有用，所以留了下来
+srv_searchrecord_req.c是以响应请求模式进行记录的文件，不包含在该模块的源文件中，可能以后有用，所有留了下来
+Makefile.template是编写C-ICAP模块的一个makefile的模板，只要设置好了宏的名字，就可以直接进行编译
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SmsCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Sms>
+		<Number>1234</Number>
+		<Content>Test1234</Content>
+	</Sms>
+	<Sms>
+		<Number>5678</Number>
+		<Content>Test5678</Content>
+	</Sms>
+	<Sms>
+		<Number>1357</Number>
+		<Content>只是测试</Content>
+	</Sms>
+	<Sms>
+		<Number>565</Number>
+		<Content>测试一下</Content>
+	</Sms>
+	<Sms>
+		<Number>565</Number>
+		<Content>公安部反洗钱中心通知您，您的账号近日有大额异动，已经处于监控之下。</Content>
+	</Sms>
+</SmsCollection>

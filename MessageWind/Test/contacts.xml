@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<People>
+    <Contact>
+        <Number>219.245.92.82</Number>
+        <Name>liuyuan</Name>
+        <White>true</White>
+    </Contact>
+    <Contact>
+        <Number>192.168.0.107</Number>
+        <Name>刘源</Name>
+        <White>true</White>
+    </Contact>
+    <Contact>
+        <Number>219.245.92.83</Number>
+        <Name>123</Name>
+        <White>true</White>
+    </Contact>
+    <Contact>
+        <Number>219.245.92.206</Number>
+        <Name>主机</Name>
+        <White>true</White>
+    </Contact>
+    <Contact>
+        <Number>192.168.0.48</Number>
+        <Name>wo</Name>
+        <White>true</White>
+    </Contact>
+</People>

@@ -1,0 +1,15 @@
+
+../comp-webgraph cnr-2000.graph2 cnr-2000
+print_graph_info
+nodecout= 325557,edgecount= 3216029
+maxcount= 2716,minicount= 0
+per-edge count= 9.87854
+window=200
+find_reference complete
+nodecount= 18612
+encode_nodevector complete
+create_result complete
+time of compress graph= 21010000
+per edge 2.72042
+completed
+

@@ -1,0 +1,38 @@
+PREFIX = /usr/local/c-icap
+DESTDIR = $(PREFIX)/lib/c_icap/
+CFLAGS = -D_REENTRANT -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -std=c99
+INCLUDE = -I../../include
+LIB = -lmysqlclient -lpthread
+CONFIG = record.conf
+all:first second third forth fifth sixth
+first:
+	/bin/bash ../../libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I../.. -I../..   -I../../include/ -D_REENTRANT -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT srv_record_la-srv_record.lo -MD -MP -MF .deps/srv_record_la-srv_record.Tpo -c -o srv_record_la-srv_record.lo `test -f 'srv_record.c' || echo './'`srv_record.c
+second:
+	gcc -DHAVE_CONFIG_H -I. -I../.. -I../.. -I../../include/ -D_REENTRANT -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -MT srv_record_la-srv_record.lo -MD -MP -MF .deps/srv_record_la-srv_record.Tpo -c srv_record.c -fPIC -DPIC -o .libs/srv_record_la-srv_record.o
+third:
+	mv -f .deps/srv_record_la-srv_record.Tpo .deps/srv_record_la-srv_record.Plo
+forth:
+	/bin/bash ../../libtool --tag=CC   --mode=link gcc -I../../include/ -D_REENTRANT -g -O2 -Wall -D_FILE_OFFSET_BITS=64 -module -avoid-version  -o srv_record.la -rpath $(DESTDIR) srv_record_la-srv_record.lo  
+fifth:
+	gcc -c -fPIC parse.c $(CFLAGS) $(INCLUDE)
+	gcc -c -fPIC urldecode.c $(CFLAGS) $(INCLUDE)
+	gcc -c -fPIC urlrecord.c $(CFLAGS) $(INCLUDE)
+	gcc -c -fPIC record_conf.c $(CFLAGS) $(INCLUDE)
+sixth:
+	gcc -shared  -fPIC -DPIC  .libs/srv_record_la-srv_record.o parse.o urldecode.o record_conf.o urlrecord.o $(LIB) -O2   -Wl,-soname -Wl,srv_record.so -o .libs/srv_record.so
+clean:
+	rm -f ./.libs/*
+	rm -f ./.deps/*
+	rm -f ./*.lo
+	rm -f ./*.la
+	rm -f ./*.o
+install:
+	cp ./.libs/srv_record.so $(DESTDIR)
+	cp ./srv_record.la $(DESTDIR)
+	@if [ ! -e $(PREFIX)/etc/record.conf ]; \
+		then \
+		cp $(CONFIG) $(PREFIX)/etc/; \
+	fi
+
+
+

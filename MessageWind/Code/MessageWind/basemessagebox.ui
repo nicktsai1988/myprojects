@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BaseMessageBox</class>
+ <widget class="QDialog" name="BaseMessageBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>243</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>241</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>总数：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <action name="actionLook">
+   <property name="text">
+    <string>查看</string>
+   </property>
+   <property name="toolTip">
+    <string>查看</string>
+   </property>
+  </action>
+  <action name="actionReply">
+   <property name="text">
+    <string>回复</string>
+   </property>
+   <property name="toolTip">
+    <string>回复</string>
+   </property>
+  </action>
+  <action name="actionSend">
+   <property name="text">
+    <string>转发</string>
+   </property>
+   <property name="toolTip">
+    <string>转发</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="text">
+    <string>编辑</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑</string>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="text">
+    <string>移动到垃圾箱</string>
+   </property>
+   <property name="toolTip">
+    <string>移动到垃圾箱</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>删除</string>
+   </property>
+   <property name="toolTip">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="actionDeleteALL">
+   <property name="text">
+    <string>全部删除</string>
+   </property>
+   <property name="toolTip">
+    <string>全部删除</string>
+   </property>
+  </action>
+  <action name="actionBack">
+   <property name="text">
+    <string>还原</string>
+   </property>
+  </action>
+  <action name="actionRead">
+   <property name="text">
+    <string>朗读</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

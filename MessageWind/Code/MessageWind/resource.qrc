@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>icons/email.png</file>
+        <file>icons/email_add.png</file>
+        <file>icons/email_attach.png</file>
+        <file>icons/email_delete.png</file>
+        <file>icons/email_edit.png</file>
+        <file>icons/email_error.png</file>
+        <file>icons/email_go.png</file>
+        <file>icons/wrench.png</file>
+        <file>icons/email_open_image.png</file>
+        <file>icons/user.png</file>
+        <file>icons/user2.png</file>
+        <file>icons/user_offline.png</file>
+    </qresource>
+</RCC>
